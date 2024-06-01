@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  wordpress:
+    container_name: wordpress
+    image: wordpress:latest
+    depends_on:
+      - database
+    environment:
+      WORDPRESS_DB_HOST: database
+      WORDPRESS_DB_USER: Hrushikesh
+      WORDPRESS_DB_PASSWORD: 12345678
+      WORDPRESS_DB_NAME: MySqlDB
+    ports:
+      - "8080:80"
+    networks:
+      - custom_network
+
+  database:
+    container_name: database
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: Mysql
+      MYSQL_DATABASE: MySqlDB
+      MYSQL_USER: Hrushikesh
+      MYSQL_PASSWORD: 12345678
+    volumes:
+      - /data:/var/lib/mysql
+    networks:
+      - custom_network
+
+networks:
+  custom_network:
+    driver: bridge
