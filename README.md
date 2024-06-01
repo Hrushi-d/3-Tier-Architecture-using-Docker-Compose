@@ -1,6 +1,14 @@
 # 3-Tier Architecture Using Docker Compose 
 
-In this setup, we'll be using Docker Compose to orchestrate a 3-tier architecture comprising WordPress, MySQL, and a custom network for communication between the containers.
+In this setup, we'll be using Docker Compose to orchestrate a 3-tier architecture
+
+Our architecture comprises three layers:
+Database Container: Hosting the MySQL database.
+Application Container: Running the WordPress application, which connects to the database.
+Presentation Layer: Serving as the front-end interface for user interaction, powered by the WordPress application.
+We'll define and configure these components using a docker-compose.yml file.
+
+
 For a more detailed explanation and insights into setting up this architecture, you can visit our blog post [here](https://blog.hrushikeshdagwar.tech/docker-compose-3-tier-architecture-simple-setup-guide).
 
 ### WordPress Container
