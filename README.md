@@ -1,4 +1,4 @@
-# Docker Compose 3-Tier Architecture
+# 3-Tier Architecture Using Docker Compose 
 
 In this setup, we'll be using Docker Compose to orchestrate a 3-tier architecture comprising WordPress, MySQL, and a custom network for communication between the containers.
 
