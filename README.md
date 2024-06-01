@@ -1,7 +1,7 @@
 # 3-Tier Architecture Using Docker Compose 
 
 In this setup, we'll be using Docker Compose to orchestrate a 3-tier architecture comprising WordPress, MySQL, and a custom network for communication between the containers.
-
+For a more detailed explanation and insights into setting up this architecture, you can visit our blog post [here](https://blog.hrushikeshdagwar.tech/docker-compose-3-tier-architecture-simple-setup-guide).
 
 ### WordPress Container
 
@@ -23,7 +23,7 @@ The MySQL database container stores all the application data. It's responsible f
     docker-compose up -d
     ```
 
-6. Access WordPress Application: Once the containers are up and running, access the WordPress application by navigating to [http://localhost:8080](http://localhost:8080) in your web browser.
+6.  Access WordPress Application: Once the containers are up and running, access the WordPress application by navigating to [http://localhost:8080](http://localhost:8080) in your web browser.
 
 ### Notes
 
