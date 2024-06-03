@@ -6,7 +6,7 @@ Our architecture comprises three layers:
 Database Container,
 Application Container,
 Presentation Layer.
-We'll define and configure these components using a docker-compose.yml file.
+We'll define and configure these components using a docker-compose.yaml file.
 
 
 For a more detailed explanation and insights into setting up this architecture, you can visit [3-Tier Architecture Using Docker Compose ](https://blog.hrushikeshdagwar.tech/docker-compose-3-tier-architecture-simple-setup-guide).
@@ -25,8 +25,8 @@ The MySQL database container stores all the application data. It's responsible f
 ### Deployment Instructions
 
 1. Ensure you have Docker Compose installed on your system.
-2. Create a directory for your project and create a `docker-compose.yml` file inside it.
-3. Copy and paste the contents of the `docker-compose.yml` file provided.
+2. Create a directory for your project and create a `docker-compose.yaml` file inside it.
+3. Copy and paste the contents of the `docker-compose.yaml` file provided.
 4. Open Terminal: Open a terminal window and navigate to your project directory.
 
 5. Start Containers: Run the following command to start the containers:
